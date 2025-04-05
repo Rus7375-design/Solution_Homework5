@@ -1,3 +1,7 @@
+package proxy;
+
+import proxy.Image;
+
 public class ProxyImage implements Image {
     private String fileName;
     private RealImage realImage;
@@ -8,7 +12,7 @@ public class ProxyImage implements Image {
     // Показываем превью
     @Override
     public void display() {
-        System.out.println("[ProxyImage] Показывается миниатюра изображения: " + fileName);
+        System.out.println("[proxy.ProxyImage] Показывается миниатюра изображения: " + fileName);
     }
 
     // Показываем полное изображение

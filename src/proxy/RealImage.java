@@ -1,3 +1,7 @@
+package proxy;
+
+import proxy.Image;
+
 public class RealImage implements Image {
     private String fileName;
     public RealImage(String fileName) {
@@ -6,17 +10,17 @@ public class RealImage implements Image {
     }
     // Загрузку изображения
     private void loadImage() {
-        System.out.println("[RealImage] Загружается полноразмерное изображение с диска: " + fileName);
+        System.out.println("[proxy.RealImage] Загружается полноразмерное изображение с диска: " + fileName);
     }
     // Показ миниатюры
     @Override
     public void display() {
-        System.out.println("[RealImage] Показывается миниатюра изображения: " + fileName);
+        System.out.println("[proxy.RealImage] Показывается миниатюра изображения: " + fileName);
     }
 
     // Показ полноразмерного изображения
     @Override
     public void displayFullImage() {
-        System.out.println("[RealImage] Показывается полноразмерное изображение: " + fileName);
+        System.out.println("[proxy.RealImage] Показывается полноразмерное изображение: " + fileName);
     }
 }
