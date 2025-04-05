@@ -4,9 +4,11 @@ public class RealImage implements Image {
         this.fileName = fileName;
         loadImage();
     }
+    // Загрузку изображения
     private void loadImage() {
         System.out.println("[RealImage] Загружается полноразмерное изображение с диска: " + fileName);
     }
+    // Показ миниатюры
     @Override
     public void display() {
         System.out.println("[RealImage] Показывается миниатюра изображения: " + fileName);
